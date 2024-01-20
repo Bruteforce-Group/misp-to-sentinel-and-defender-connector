@@ -8,7 +8,7 @@ RUN apk update && \
 
 RUN git clone --branch stable https://github.com/nv-pipo/misp-to-sentinel-and-defender-connector.git
 
-FROM python:3.10-alpine
+FROM python:3.13.0a3-alpine
 ENV PYTHONUNBUFFERED=1
 
 RUN apk update
